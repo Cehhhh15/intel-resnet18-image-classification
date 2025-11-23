@@ -32,7 +32,6 @@ https://www.kaggle.com/datasets/puneet6060/intel-image-classification
     │   └── gambar.jpg
 
 ---
-
 ## ⚙️ Environment
 
 Project sudah menyertakan `requirements.txt`, sehingga instalasi cukup
@@ -89,3 +88,17 @@ menjalankan prediksi langsung pada cell inference.
 Model tersimpan berada di:
 
     saved_model/resnet18_state_dict.pth
+---
+## 🧩 Environment Versions
+
+Proyek ini telah diuji menggunakan:
+
+Python: Python 3.10
+
+PyTorch: torch 2.3.1+cu121
+
+Torchvision: 0.18.1+cu121
+
+CUDA: CUDA 12.1
+
+
