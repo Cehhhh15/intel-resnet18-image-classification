@@ -1,6 +1,6 @@
 # Intel Image Classification --- ResNet18 (PyTorch)
 
-------------------------------------------------------------------------
+---
 
 ## 📌 Deskripsi Singkat
 
@@ -9,28 +9,29 @@ street) menggunakan ResNet18. Dataset: Intel Image Classification. Model
 dilatih dengan PyTorch, mencapai akurasi **92.9%** di data test.
 Mendukung inference langsung dari model tersimpan.
 
-------------------------------------------------------------------------
+---
 
 ## 📂 Dataset
 
 Kaggle Dataset:\
 https://www.kaggle.com/datasets/puneet6060/intel-image-classification
 
-------------------------------------------------------------------------
+---
 
 ## 📁 Project Structure
 
     📦 intel-resnet18-image-classification
     │
-    ├── saved_model_TORCH/
+    ├── saved_model/
     │   └── best_model.pth
     │
-    ├── train.ipynb
-    ├── predict.py
+    ├── Image Classification.ipynb
     ├── requirements.txt
     └── README.md
+    ├── Testing/
+    │   └── gambar.jpg
 
-------------------------------------------------------------------------
+---
 
 ## ⚙️ Environment
 
@@ -39,7 +40,7 @@ dengan:
 
     pip install -r requirements.txt
 
-------------------------------------------------------------------------
+---
 
 ## 📊 Hasil Model
 
@@ -64,42 +65,27 @@ dengan:
     F1 Score  : 0.9286
     Accuracy  : 0.9290
 
-------------------------------------------------------------------------
+---
 
 ## 🚀 Training
 
 Semua proses training dilakukan dalam **1 notebook**:
 
-    train.ipynb
+    Image Classification.ipynb
 
-Jika ingin menjalankan training via script (opsional):
-
-    python train.py
-
-------------------------------------------------------------------------
+---
 
 ## 🔍 Inference
 
-### 📌 Menggunakan fungsi Python
+### 📌 Dalam Notebook (Image Classification.ipynb)
 
-    from predict import predict_image
-
-    img, pred = predict_image("test.jpg")
-    print("Predicted:", pred)
-
-### 📌 Melalui CLI
-
-    python predict.py --img "test.jpg"
-
-### 📌 Dalam Notebook (train.ipynb)
-
-Model otomatis diload dari folder `saved_model_TORCH/` dan dapat
+Model otomatis diload dari folder `saved_model/` dan dapat
 menjalankan prediksi langsung pada cell inference.
 
-------------------------------------------------------------------------
+---
 
 ## 📎 Model
 
 Model tersimpan berada di:
 
-    saved_model_TORCH/best_model.pth
+    saved_model/resnet18_state_dict.pth
