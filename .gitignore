@@ -1,0 +1,12 @@
+# Virtual environment
+.venv/
+venv/
+saved_models/
+
+# Dataset folders and compressed dataset
+Dataset/
+*.zip
+
+#files
+best_resnet18_model.pth
+cuda.ipynb
